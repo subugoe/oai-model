@@ -18,5 +18,8 @@
             "email": "i.pfennigstorf@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "php": "^7.4 || ^8.0 || ^8.1",
+        "jms/serializer": "^3.17"
+    }
 }
