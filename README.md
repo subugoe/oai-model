@@ -6,7 +6,7 @@ In a Symfony application, the models kann be filled programmatically like that f
 
 ```php
 // assume we injected some service at $this->oaiService
-$identify = new Identify();
+$identify = new new \Subugoe\OaiModel\Model\Identify\Identify();
 $identification = new \Subugoe\OaiModel\Model\Identify\Identification();
 $description = new \Subugoe\OaiModel\Model\Identify\Description();
 $oaiIdentifier = new \Subugoe\OaiModel\Model\Identify\OaiIdentifier();
