@@ -7,9 +7,9 @@ In a Symfony application, the models kann be filled programmatically like that f
 ```php
 // assume we injected some service at $this->oaiService
 $identify = new Identify();
-$identification = new Identification();
-$description = new Description();
-$oaiIdentifier = new OaiIdentifier();
+$identification = new \Subugoe\OaiModel\Model\Identify\Identification();
+$description = new \Subugoe\OaiModel\Model\Identify\Description();
+$oaiIdentifier = new \Subugoe\OaiModel\Model\Identify\OaiIdentifier();
 $oaiIdentifierTags = $oaiConfiguration['oai_identifier'];
 
 $oaiIdentifier
@@ -23,7 +23,7 @@ $oaiIdentifier
 
 $description->setOaiIdentifier($oaiIdentifier);
 $identificationTags = $oaiConfiguration['identification_tags'];
-$oaiRequest = (new \Subugoe\OaiModel\Model\Oai\Request())
+$oaiRequest = (new \Subugoe\OaiModel\Model\Request())
     ->setUrl($url)
     ->setVerb('Identify');
 $identify
