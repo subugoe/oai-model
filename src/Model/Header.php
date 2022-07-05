@@ -4,15 +4,23 @@ declare(strict_types=1);
 
 namespace Subugoe\OaiModel\Model;
 
+use JMS\Serializer\Annotation as Serializer;
+
 class Header
 {
     /**
-     * @var \DateTime|\DateTimeImmutable
+     * @Serializer\XmlElement(cdata=false)
      */
     private \DateTimeInterface $datestamp;
 
+    /**
+     * @Serializer\XmlElement(cdata=false)
+     */
     private string $identifier;
 
+    /**
+     * @Serializer\XmlElement(cdata=false)
+     */
     private string $setSpec;
 
     /**

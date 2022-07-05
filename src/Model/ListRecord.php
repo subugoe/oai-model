@@ -14,7 +14,7 @@ use JMS\Serializer\Annotation as Serializer;
 class ListRecord
 {
     /**
-     * @Serializer\SerializedName("ListRecord")
+     * @Serializer\SerializedName("ListRecords")
      */
     private ?ListRecords $listRecords = null;
 
