@@ -4,27 +4,75 @@ declare(strict_types=1);
 
 namespace Subugoe\OaiModel\Model;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use JMS\Serializer\Annotation as Serializer;
+
 class Metadata
 {
+    /**
+     * @Serializer\XmlList(inline = true, entry = "date")
+     * @Serializer\Type("ArrayCollection<string>")
+     */
     private \Doctrine\Common\Collections\Collection $dates;
 
+    /**
+     * @Serializer\XmlList(inline = true, entry = "format")
+     */
     private \Doctrine\Common\Collections\Collection $formats;
 
+    /**
+     * @Serializer\XmlList(inline = true, entry = "identifier")
+     */
     private \Doctrine\Common\Collections\Collection $identifiers;
 
+    /**
+     * @Serializer\XmlList(inline = true, entry = "language")
+     */
     private \Doctrine\Common\Collections\Collection $languages;
 
+    /**
+     * @Serializer\XmlList(inline = true, entry = "publisher")
+     */
     private \Doctrine\Common\Collections\Collection $publishers;
 
+    /**
+     * @Serializer\XmlList(inline = true, entry = "rights")
+     */
     private \Doctrine\Common\Collections\Collection $rights;
 
+    /**
+     * @Serializer\XmlList(inline = true, entry = "sourcs")
+     */
     private \Doctrine\Common\Collections\Collection $sources;
 
+    /**
+     * @Serializer\XmlList(inline = true, entry = "subject")
+     */
     private \Doctrine\Common\Collections\Collection $subjects;
 
+    /**
+     * @Serializer\XmlList(inline = true, entry = "title")
+     */
     private \Doctrine\Common\Collections\Collection $titles;
 
+    /**
+     * @Serializer\XmlList(inline = true, entry = "type")
+     */
     private \Doctrine\Common\Collections\Collection $types;
+
+    public function __construct()
+    {
+        $this->dates = new ArrayCollection();
+        $this->formats = new ArrayCollection();
+        $this->identifiers = new ArrayCollection();
+        $this->languages = new ArrayCollection();
+        $this->publishers = new ArrayCollection();
+        $this->rights = new ArrayCollection();
+        $this->sources = new ArrayCollection();
+        $this->subjects = new ArrayCollection();
+        $this->titles = new ArrayCollection();
+        $this->types = new ArrayCollection();
+    }
 
     public function addDate(string $date): void
     {
