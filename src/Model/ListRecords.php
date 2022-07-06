@@ -14,6 +14,11 @@ class ListRecords
      */
     private \Doctrine\Common\Collections\Collection $records;
 
+    /**
+     * @Serializer\SerializedName("resumptionToken")
+     */
+    private ?ResumptionToken $resumptionToken = null;
+
     public function addRecord(Record $record): void
     {
         if (!$this->records->contains($record)) {
@@ -26,8 +31,18 @@ class ListRecords
         return $this->records;
     }
 
+    public function getResumptionToken(): ?ResumptionToken
+    {
+        return $this->resumptionToken;
+    }
+
     public function setRecords(\Doctrine\Common\Collections\Collection $records): void
     {
         $this->records = $records;
+    }
+
+    public function setResumptionToken(?ResumptionToken $resumptionToken): void
+    {
+        $this->resumptionToken = $resumptionToken;
     }
 }

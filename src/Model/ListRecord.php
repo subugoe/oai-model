@@ -23,11 +23,6 @@ class ListRecord
      */
     private ?Oai $oai = null;
 
-    /**
-     * @Serializer\SerializedName("resumptionToken")
-     */
-    private ?ResumptionToken $resumptionToken = null;
-
     public function getListRecords(): ?ListRecords
     {
         return $this->listRecords;
@@ -38,11 +33,6 @@ class ListRecord
         return $this->oai;
     }
 
-    public function getResumptionToken(): ?ResumptionToken
-    {
-        return $this->resumptionToken;
-    }
-
     public function setListRecords(?ListRecords $listRecords): void
     {
         $this->listRecords = $listRecords;
@@ -51,10 +41,5 @@ class ListRecord
     public function setOai(?Oai $oai): void
     {
         $this->oai = $oai;
-    }
-
-    public function setResumptionToken(?ResumptionToken $resumptionToken): void
-    {
-        $this->resumptionToken = $resumptionToken;
     }
 }
