@@ -9,7 +9,6 @@ use Subugoe\OaiModel\Exception\IdDoesNotExistException;
 use Subugoe\OaiModel\Exception\NoMetadataFormatsException;
 use Subugoe\OaiModel\Exception\NoRecordsMatchException;
 use Subugoe\OaiModel\Exception\NoSetHierarchyException;
-use Subugoe\OaiModel\Exception\OaiException;
 use Subugoe\OaiModel\Model\Identify\Identify;
 use Subugoe\OaiModel\Model\ListIdentifier;
 use Subugoe\OaiModel\Model\ListRecord;
@@ -42,7 +41,7 @@ interface RequestInterface
      * @throws NoRecordsMatchException
      * @throws NoSetHierarchyException
      */
-    public function listIdentifiers(string $format, ?\DateTimeInterface $from = null, ?\DateTimeInterface $until = null, ?string $metadataPrefix = null, ?string $set = null): ListIdentifier;
+    public function listIdentifiers(string $metadataPrefix, ?\DateTimeInterface $from = null, ?\DateTimeInterface $until = null, ?string $set = null): ListIdentifier;
 
     /**
      * @throws BadArgumentException
@@ -66,11 +65,4 @@ interface RequestInterface
      * @throws NoSetHierarchyException
      */
     public function listSets(): Sets;
-
-    /**
-     * @throws OaiException
-     *
-     * @deprecated only in use for legacy reasons
-     */
-    public function start(): string;
 }
