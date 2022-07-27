@@ -9,10 +9,12 @@ use Subugoe\OaiModel\Exception\IdDoesNotExistException;
 use Subugoe\OaiModel\Exception\NoMetadataFormatsException;
 use Subugoe\OaiModel\Exception\NoRecordsMatchException;
 use Subugoe\OaiModel\Exception\NoSetHierarchyException;
+use Subugoe\OaiModel\Exception\OaiException;
 use Subugoe\OaiModel\Model\Identify\Identify;
 use Subugoe\OaiModel\Model\ListIdentifier;
 use Subugoe\OaiModel\Model\ListRecord;
 use Subugoe\OaiModel\Model\MetadataFormats;
+use Subugoe\OaiModel\Model\Oai;
 use Subugoe\OaiModel\Model\Sets;
 
 /**
@@ -21,6 +23,8 @@ use Subugoe\OaiModel\Model\Sets;
 interface RequestInterface
 {
     public function deleteExpiredResumptionTokens(): void;
+
+    public function error(OaiException $exception): Oai;
 
     /**
      * @throws BadArgumentException

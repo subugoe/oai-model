@@ -21,11 +21,21 @@ class Oai
     /**
      * @Serializer\XmlElement(cdata=false)
      */
+    private ?Error $error = null;
+
+    /**
+     * @Serializer\XmlElement(cdata=false)
+     */
     private ?\Subugoe\OaiModel\Model\Request $request = null;
 
     public function getDate(): \DateTimeImmutable
     {
         return $this->date;
+    }
+
+    public function getError(): ?Error
+    {
+        return $this->error;
     }
 
     public function getRequest(): Request
@@ -39,6 +49,13 @@ class Oai
     public function setDate(\DateTimeImmutable $date): self
     {
         $this->date = $date;
+
+        return $this;
+    }
+
+    public function setError(?Error $error): Oai
+    {
+        $this->error = $error;
 
         return $this;
     }
