@@ -30,9 +30,6 @@ class Results
         return $this->foundCount;
     }
 
-    /**
-     * @return Results
-     */
     public function setDocuments(array $documents): self
     {
         $this->documents = $documents;
@@ -40,9 +37,6 @@ class Results
         return $this;
     }
 
-    /**
-     * @return Results
-     */
     public function setFoundCount(int $foundCount): self
     {
         $this->foundCount = $foundCount;

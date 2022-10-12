@@ -50,9 +50,6 @@ class Request
         return $this->verb;
     }
 
-    /**
-     * @return Request
-     */
     public function setIdentifier(string $identifier): self
     {
         $this->identifier = $identifier;
@@ -65,9 +62,6 @@ class Request
         $this->metadataPrefix = $metadataPrefix;
     }
 
-    /**
-     * @return Request
-     */
     public function setUrl(string $url): self
     {
         $this->url = $url;
@@ -75,9 +69,6 @@ class Request
         return $this;
     }
 
-    /**
-     * @return Request
-     */
     public function setVerb(string $verb): self
     {
         $this->verb = $verb;

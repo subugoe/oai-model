@@ -52,9 +52,6 @@ class Collection
         return $this->label;
     }
 
-    /**
-     * @return Collection
-     */
     public function setDescription(string $description): self
     {
         $this->description = $description;
@@ -62,9 +59,6 @@ class Collection
         return $this;
     }
 
-    /**
-     * @return Collection
-     */
     public function setId(string $id): self
     {
         $this->id = $id;
@@ -72,9 +66,6 @@ class Collection
         return $this;
     }
 
-    /**
-     * @return Collection
-     */
     public function setImage(string $image): self
     {
         $this->image = $image;
@@ -82,9 +73,6 @@ class Collection
         return $this;
     }
 
-    /**
-     * @return Collection
-     */
     public function setLabel(string $label): self
     {
         $this->label = $label;

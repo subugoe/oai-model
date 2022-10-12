@@ -43,9 +43,6 @@ class Oai
         return $this->request;
     }
 
-    /**
-     * @return Oai
-     */
     public function setDate(\DateTimeImmutable $date): self
     {
         $this->date = $date;
@@ -60,9 +57,6 @@ class Oai
         return $this;
     }
 
-    /**
-     * @return Oai
-     */
     public function setRequest(Request $request): self
     {
         $this->request = $request;
