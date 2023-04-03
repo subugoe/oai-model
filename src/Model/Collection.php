@@ -16,7 +16,9 @@ class Collection
 
     /**
      * @Serializer\Expose()
+     *
      * @Serializer\SerializedName("setSpec")
+     *
      * @Serializer\XmlElement(cdata=false)
      */
     private ?string $id = null;
@@ -28,6 +30,7 @@ class Collection
 
     /**
      * @Serializer\Expose()
+     *
      * @Serializer\SerializedName("setName")
      */
     private ?string $label = null;

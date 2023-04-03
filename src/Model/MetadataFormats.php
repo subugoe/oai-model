@@ -11,6 +11,7 @@ class MetadataFormats extends Oai
 {
     /**
      * @Serializer\SerializedName("ListMetadataFormats")
+     *
      * @Serializer\XmlList(entry = "metadataFormat")
      */
     private ?array $metadataFormats = null;

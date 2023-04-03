@@ -13,24 +13,28 @@ class OaiIdentifier
 
     /**
      * @Serializer\SerializedName("xmlns")
+     *
      * @Serializer\XmlAttribute
      */
     private ?string $namespace = null;
 
     /**
      * @Serializer\XmlElement(cdata=false)
+     *
      * @Serializer\SerializedName("repositoryIdentifier")
      */
     private ?string $repositoryIdentifier = null;
 
     /**
      * @Serializer\XmlElement(cdata=false)
+     *
      * @Serializer\SerializedName("sampleIdentifier")
      */
     private ?string $sampleIdentifier = null;
 
     /**
      * @Serializer\SerializedName("xsi:schemaLocation")
+     *
      * @Serializer\XmlAttribute
      */
     private ?string $schemaLocation = null;
@@ -42,6 +46,7 @@ class OaiIdentifier
 
     /**
      * @Serializer\SerializedName("xmlns:xsi")
+     *
      * @Serializer\XmlAttribute
      */
     private ?string $xsi = null;

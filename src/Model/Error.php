@@ -15,6 +15,7 @@ class Error
 
     /**
      * @Serializer\XmlElement(cdata=false)
+     *
      * @Serializer\Inline()
      */
     private string $message;

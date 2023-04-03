@@ -6,10 +6,10 @@ use Rector\Core\ValueObject\PhpVersion;
 use Rector\Set\ValueObject\SetList;
 
 return static function (Rector\Config\RectorConfig $containerConfigurator): void {
-    $containerConfigurator->disableImportShortClasses();
+    $containerConfigurator->importShortClasses(false);
 
     $containerConfigurator->sets([
-        SetList::PHP_74,
+        SetList::PHP_80,
         SetList::CODING_STYLE,
         SetList::CODE_QUALITY,
     ]);

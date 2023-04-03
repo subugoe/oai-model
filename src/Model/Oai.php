@@ -6,6 +6,7 @@ use JMS\Serializer\Annotation as Serializer;
 
 /**
  * @Serializer\XmlRoot("OAI-PMH")
+ *
  * @Serializer\XmlNamespace(uri="https://www.openarchives.org/OAI/2.0/")
  * @Serializer\XmlNamespace(uri="http://www.w3.org/2001/XMLSchema-instance", prefix="xsi")
  * @Serializer\XmlNamespace(uri="https://www.openarchives.org/OAI/2.0/OAI-PMH.xsd", prefix="schemaLocation")
@@ -14,6 +15,7 @@ class Oai
 {
     /**
      * @Serializer\XmlElement(cdata=false)
+     *
      * @Serializer\SerializedName("responseDate")
      */
     private ?\DateTimeImmutable $date = null;

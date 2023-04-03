@@ -10,6 +10,7 @@ class ListRecords
 {
     /**
      * @Serializer\SerializedName("Record")
+     *
      * @Serializer\XmlList(inline = true, entry = "record")
      */
     private \Doctrine\Common\Collections\Collection $records;

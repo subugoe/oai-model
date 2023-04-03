@@ -21,6 +21,7 @@ class Request
 
     /**
      * @Serializer\XmlValue
+     *
      * @Serializer\XmlElement(cdata=false)
      */
     private ?string $url = null;

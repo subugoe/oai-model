@@ -10,6 +10,7 @@ class ResumptionToken
 {
     /**
      * @Serializer\XmlAttribute
+     *
      * @Serializer\SerializedName("completeListSize")
      */
     private int $completeListSize;
@@ -21,6 +22,7 @@ class ResumptionToken
 
     /**
      * @Serializer\XmlAttribute
+     *
      * @Serializer\SerializedName("expirationDate")
      */
     private \DateTimeInterface $expirationDate;

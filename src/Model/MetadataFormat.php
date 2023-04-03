@@ -8,12 +8,14 @@ class MetadataFormat
 {
     /**
      * @Serializer\SerializedName("metadataNamespace")
+     *
      * @Serializer\XmlElement(cdata=false)
      */
     private ?string $namespace = null;
 
     /**
      * @Serializer\SerializedName("metadataPrefix")
+     *
      * @Serializer\XmlElement(cdata=false)
      */
     private ?string $prefix = null;

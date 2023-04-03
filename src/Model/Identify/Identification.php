@@ -8,18 +8,21 @@ class Identification
 {
     /**
      * @Serializer\XmlElement(cdata=false)
+     *
      * @Serializer\SerializedName("adminEmail")
      */
     private ?string $adminEmail = null;
 
     /**
      * @Serializer\XmlElement(cdata=false)
+     *
      * @Serializer\SerializedName("baseURL")
      */
     private ?string $baseUrl = null;
 
     /**
      * @Serializer\XmlElement(cdata=false)
+     *
      * @Serializer\SerializedName("deletedRecord")
      */
     private ?string $deletedRecord = null;
@@ -28,6 +31,7 @@ class Identification
 
     /**
      * @Serializer\XmlElement(cdata=false)
+     *
      * @Serializer\SerializedName("earliestDatestamp")
      */
     private ?\DateTimeImmutable $earliestDatestamp = null;
@@ -39,12 +43,14 @@ class Identification
 
     /**
      * @Serializer\XmlElement(cdata=false)
+     *
      * @Serializer\SerializedName("protocolVersion")
      */
     private ?string $protocolVersion = null;
 
     /**
      * @Serializer\XmlElement(cdata=false)
+     *
      * @Serializer\SerializedName("repositoryName")
      */
     private ?string $repositoryName = null;

@@ -11,6 +11,7 @@ class Sets extends Oai
 {
     /**
      * @Serializer\SerializedName("ListSets")
+     *
      * @Serializer\XmlList(inline = false, entry = "set")
      */
     private ?array $sets = null;

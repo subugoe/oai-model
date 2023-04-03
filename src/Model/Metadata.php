@@ -11,6 +11,7 @@ class Metadata
 {
     /**
      * @Serializer\XmlList(inline = true, entry = "date")
+     *
      * @Serializer\Type("ArrayCollection<string>")
      */
     private \Doctrine\Common\Collections\Collection $dates;
