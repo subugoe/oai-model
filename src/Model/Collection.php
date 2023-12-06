@@ -32,6 +32,8 @@ class Collection
      * @Serializer\Expose()
      *
      * @Serializer\SerializedName("setName")
+     *
+     * @Serializer\XmlElement(cdata=false)
      */
     private ?string $label = null;
 
