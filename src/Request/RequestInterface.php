@@ -45,7 +45,7 @@ interface RequestInterface
      * @throws NoRecordsMatchException
      * @throws NoSetHierarchyException
      */
-    public function listIdentifiers(string $metadataPrefix, ?\DateTimeInterface $from = null, ?\DateTimeInterface $until = null, ?string $set = null): ListIdentifier;
+    public function listIdentifiers(string $metadataPrefix, \DateTimeInterface $from = null, \DateTimeInterface $until = null, string $set = null): ListIdentifier;
 
     /**
      * @throws BadArgumentException
@@ -61,7 +61,7 @@ interface RequestInterface
      * @throws NoRecordsMatchException
      * @throws NoSetHierarchyException
      */
-    public function listRecords(string $metadataPrefix, ?\DateTimeInterface $from = null, ?\DateTimeInterface $until = null, ?string $set = null): ListRecord;
+    public function listRecords(string $metadataPrefix, \DateTimeInterface $from = null, \DateTimeInterface $until = null, string $set = null): ListRecord;
 
     /**
      * @throws BadArgumentException
