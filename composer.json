@@ -3,9 +3,9 @@
     "description": "OAI-PMH Model",
     "type": "library",
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.8",
-        "rector/rector": "^0.15.23",
-        "phpstan/phpstan": "^1.7"
+        "friendsofphp/php-cs-fixer": "*",
+        "rector/rector": "*",
+        "phpstan/phpstan": "*"
     },
     "license": "AGPL-3.0-or-later",
     "autoload": {
@@ -15,13 +15,13 @@
     },
     "authors": [{
         "name": "Ingo Pfennigstorf",
-        "email": "i.pfennigstorf@gmail.com"
+        "email": "pfennigstorf@sub.uni-goettingen.de"
     }],
     "require": {
         "php": "^8.1",
-        "jms/serializer": "^3.17",
+        "jms/serializer": "^4.0 || ^5.0",
         "subugoe/iiif-model": "^0.2.4",
-        "doctrine/collections": "^2.0"
+        "doctrine/collections": "*"
     },
     "scripts": {
         "lint": [
