@@ -18,9 +18,9 @@
         "email": "pfennigstorf@sub.uni-goettingen.de"
     }],
     "require": {
-        "php": "^8.1",
-        "jms/serializer": "^4.0 || ^5.0",
-        "subugoe/iiif-model": "^0.2.4",
+        "php": "^8.2",
+        "jms/serializer": "*",
+        "subugoe/iiif-model": "*",
         "doctrine/collections": "*"
     },
     "scripts": {
